@@ -132,4 +132,22 @@ Parts of this project are based on the following repositories:
 ## License
 [License](LICENSE.md)
 
-## Step1
+## Step 1
+##implementing Extended Kalman Filter to track a single real-world target
+The F function returns the system matrix F, which describes the state transition from one time step to the next. The Q function returns the process noise covariance Q
+
+The predict function takes a track object and predicts the state and estimation error covariance to the next time step
+
+Theupdate function takes a track object and a measurement object, and updates the state and covariance with the associated measurement.
+
+The gamma function calculates and returns the residual gamma, which is the difference between the measured and predicted states
+
+ The S function calculates and returns the covariance of the residual.
+
+![Result](https://user-images.githubusercontent.com/130584964/236632543-e525c57b-30e9-415a-99e4-b82bcb0daaf5.png)
+![Graph](https://user-images.githubusercontent.com/130584964/236632549-109031b6-fba6-416d-b0d8-2904197fb74e.png)
+
+## Step 2
+##
+
+
