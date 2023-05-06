@@ -182,7 +182,7 @@ The Trackmanagement class is a class for managing the tracks, it has  It has a l
 ![Screenshot 2023-05-06 171350](https://user-images.githubusercontent.com/130584964/236633635-ed6240af-a080-4d6c-9bdc-cc03fc2107a7.png)
 
 ## Step 4
-implement the nonlinear camera measurement model
+Implementing the nonlinear camera measurement model
 
  Defined two classes: Sensor and Measurement.
  The Sensor class includes a measurement matrix and parameters
