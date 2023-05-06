@@ -133,7 +133,8 @@ Parts of this project are based on the following repositories:
 [License](LICENSE.md)
 
 ## Step 1
-##implementing Extended Kalman Filter to track a single real-world target
+Implementing Extended Kalman Filter to track a single real-world target
+
 The F function returns the system matrix F, which describes the state transition from one time step to the next. The Q function returns the process noise covariance Q
 
 The predict function takes a track object and predicts the state and estimation error covariance to the next time step
@@ -144,10 +145,22 @@ The gamma function calculates and returns the residual gamma, which is the diffe
 
  The S function calculates and returns the covariance of the residual.
 
-![Result](https://user-images.githubusercontent.com/130584964/236632543-e525c57b-30e9-415a-99e4-b82bcb0daaf5.png)
-![Graph](https://user-images.githubusercontent.com/130584964/236632549-109031b6-fba6-416d-b0d8-2904197fb74e.png)
+![Result1](https://user-images.githubusercontent.com/130584964/236632543-e525c57b-30e9-415a-99e4-b82bcb0daaf5.png)
+![Graph1](https://user-images.githubusercontent.com/130584964/236632549-109031b6-fba6-416d-b0d8-2904197fb74e.png)
 
 ## Step 2
-##
+Implementing the track management to initialize and delete tracks, set a track state and a track score.
+
+Defined two classes: Track and Trackmanagement
+
+The Track class is a simple class that stores information about a single object track. It has state vector (x), covariance matrix (P), track ID (id), track score (score),  time stamp (t)
+The Trackmanagement class is a class for managing the tracks, it has  It has a list of tracks(track_list) , current number of tracks (N) 
+
+
+![Result2](https://user-images.githubusercontent.com/130584964/236633159-3b16f296-b53a-43b7-b0cc-9ec3ccc93566.png)
+
+![Graph2](https://user-images.githubusercontent.com/130584964/236633166-f190b349-11f4-4098-9aa7-49048ec69872.png)
+
+
 
 
