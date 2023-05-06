@@ -161,6 +161,34 @@ The Trackmanagement class is a class for managing the tracks, it has  It has a l
 
 ![Graph2](https://user-images.githubusercontent.com/130584964/236633166-f190b349-11f4-4098-9aa7-49048ec69872.png)
 
+## Step 3
+ Implementing a single nearest neighbor data association to associate measurements to tracks
+ 
+ The meas_list is a list of measurements that are currently being received.
+ The method calculates the Mahalanobis distance between each track and each measurement and updates the association_matrix
+ The get_closest_track_and_meas method finds the indices of the track and the measurement that have the smallest Mahalanobis distance in the association_matrix
+ The gating method takes two arguments: MHD and sensor. MHD is the Mahalanobis distance between a track and a measurement.
+ The MHD method takes three arguments: track, meas, and KF
+ The associate_and_update method takes three arguments: manager, meas_list, and KF. The manager is an object that manages the tracks
+ 
+ 
+![Screenshot 2023-05-06 171158](https://user-images.githubusercontent.com/130584964/236633593-d5ceccf8-af1e-4861-a3bc-6eca8bc87761.png)
+
+![Screenshot 2023-05-06 171301](https://user-images.githubusercontent.com/130584964/236633615-58199b40-c17d-48e9-a38a-768422014603.png)
 
 
+![Screenshot 2023-05-06 171320](https://user-images.githubusercontent.com/130584964/236633626-6576c27f-45cd-4291-bd62-03c222c0460d.png)
 
+![Screenshot 2023-05-06 171350](https://user-images.githubusercontent.com/130584964/236633635-ed6240af-a080-4d6c-9bdc-cc03fc2107a7.png)
+
+## Step 4
+implement the nonlinear camera measurement model
+
+ Defined two classes: Sensor and Measurement.
+ The Sensor class includes a measurement matrix and parameters
+ The get_hx method calculates the nonlinear measurement
+ The get_H method calculates the Jacobian H
+ 
+ ![Screenshot 2023-05-06 172615](https://user-images.githubusercontent.com/130584964/236633880-92d64a48-7364-49a1-bdc7-6ffd6da88fb9.png)
+
+ 
